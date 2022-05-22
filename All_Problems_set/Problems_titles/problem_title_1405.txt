@@ -1,0 +1,1 @@
+Smallest Integer Divisible by K

@@ -1,0 +1,1 @@
+Count Nodes With the Highest Score

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 1300px;
+  background: aliceblue;
+  font-family: 'Noto Serif', serif;
+}
+
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #222;
+}
+
+p {
+  border-radius: 5px;
+  background: rgb(234, 213, 213);
+  padding: 5px;
+  margin: auto;
+}
+ 
+
+.see {
+  max-width: 900px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border-color: #10555A;
+  background-color: rgb(191, 223, 251);
+
+}
+
+.pb_url {
+  color: blue;
+  display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  background-color: rgb(191, 223, 251);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.unsel_link {
+  display: block;
+  border: 1ex;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* background-color: black; */
+}
+
+.before_link {
+  display: block;
+  border: 1ex;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.selectedLink {
+  color: blueviolet;
+  display: block;
+  border-width: 2px;
+  border-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: greenyellow;
+  border-radius: 5px;
+
+}
+
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  margin: 10px auto;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.header__logo {
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: right;
+  display: flex;
+  margin: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+
+.header {
+  display: flex;
+  padding: 10px;
+  color: #fff;
+  z-index: 100;
+  background-color: #10555A;
+  margin: auto;
+  border-radius: 10px;
+
+}
+
+
+.bg {
+  /* The image used */
+  background-image: "/public/bg_img .jpeg";
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  .header__search input[type=text] {
+    padding: 6px;
+    width: 400px;
+    margin: 10px auto;
+    border: none;
+  }
+
+  .header__search input[type=submit] {
+    float: right;
+    padding: 6px 10px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+  }
+
+.problem_on_search {
+  display: block;
+  margin-top: 5px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: #222;
+  border-width: 2px;
+}
+
+.link_to {
+  font-size: 16px;
+  color: blueviolet;
+}
+
+.main_search_box {
+  width: 600px;
+  height: 40px;
+  border-radius: 20px;
+  border-width: 5dp;
+  border-color: blue;
+  display: block;
+  top: 40%;
+  left: 30%;
+  font-size: 26px;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+
+}
+
+.intro {  
+  display: block;
+  top: 30%;
+  left: 38%;
+  position: absolute;
+  color: #10555A;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+}
+
+.submit_code_desc {
+  display: block;
+  position: relative;
+  color: #10555A;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+}
+
+.code_box {
+  width: 1200px;
+  height: 300px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  border-width: 5dp;
+  border-color: blue;
+  display: block;
+  font-size: 12px;
+  position: relative;
+
+}
+
+.submit_code {
+  border-radius: 5px;
+  border-width: 5dp;
+  border-color: blue;
+  display: block;
+  font-size: 25px;
+  color: #10555A;
+  margin-top: 5px;
+  background-color: white;
+  top: 48%;
+  left: 48%;
+  position: relative;
+
+}
+
+.main_submit {
+  border-radius: 5px;
+  border-width: 5dp;
+  border-color: blue;
+  display: block;
+  font-size: 25px;
+  color: #10555A;
+  background-color: white;
+  top: 48%;
+  left: 48%;
+  position: absolute;
+
+}
+
+/* //media Queries */
+@media  screen and (max-width: 1000px) {
+  .header {
+    display: block;
+  }
+  .header__logo{
+    text-align: center;
+  }
+  .header__search input[type=text] {
+    padding: 6px;
+    width: 200px;
+    margin: 10px auto;
+    border: none;
+  } 
+  .header__search input[type=submit] {
+    padding: 6px 10px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+  }
+  
+}
+

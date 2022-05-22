@@ -1,0 +1,1 @@
+Determine Color of a Chessboard Square

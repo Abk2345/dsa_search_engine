@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems | <%- tag %> </title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+    <div class="break"></div>
+
+    <%- include('./partials/search.ejs') %>
+
+    
+    <!--Display the links to the pages-->
+    <div class="see">
+
+    <% if(iterator > 1) { %> <a class="before_link" href=/problem/difficulty/<%- tag %>?page=<%=iterator-1%>>Before</a> <% } %>
+    <% for(let i = iterator; i <= endingLink; i++) { %>
+        <% if(i === page+1) { %>
+        <a class="selectedLink" href=/problem/difficulty/<%- tag %>?page=<%=i%>><%=i%></a>
+        <% continue; %>
+    <% } %>
+        <a class="unsel_link" href=/problem/difficulty/<%- tag %>?page=<%=i%>><%=i%></a>
+        <% } %>
+        <% if(endingLink < numberOfPages) { %> <a class="before_link" href=/problem/difficulty/<%- tag %>?page=<%=endingLink+1%>>After</a> <% } %>
+    </div>
+    <div class="break"></div>
+    <div class="problem_on_search">
+      <% if (body.length> 1) { %>
+        <% for(var cnt=0; cnt < body.length; cnt++) { %>
+
+          <a class="pb_url" href=/problems/<%=body[cnt]['problem_id'] %>><%= body[cnt]['problem_title'] %> |
+              <% if(body[cnt]['problem_diff']=='hard_tag' ){ %>
+                Hard
+                <% } %>
+                  <% if(body[cnt]['problem_diff']=='easy_tag' ){ %>
+                    Easy
+                    <% } %>
+                      <% if(body[cnt]['problem_diff']=='medium_tag' ){ %>
+                        Medium
+                        <% } %>
+          </a>
+          <p class="pb_desc">
+            <%= body[cnt]['problem_desc'] %>
+          </p><br />
+          <% } %>
+            <% } else { %>
+              <p>No problem matched your query...</p>
+              <% } %>
+
+    </div>
+
+
+    
+</body>
+</html>

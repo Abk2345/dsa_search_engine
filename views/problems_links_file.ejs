@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>DSA | Problems</title>
+
+<body>
+
+  <%- include('./partials/search.ejs') %>
+
+    <div class="problem_on_search">
+      <% if (body.length> 1) { %>
+        <% for(var cnt=0; cnt < body.length; cnt++) { %>
+
+          <a class="pb_url" href=/problems/<%=body[cnt]['problem_id'] %>><%= body[cnt]['problem_title'] %> |
+              <% if(body[cnt]['problem_diff']=='hard_tag' ){ %>
+                Hard
+                <% } %>
+                  <% if(body[cnt]['problem_diff']=='easy_tag' ){ %>
+                    Easy
+                    <% } %>
+                      <% if(body[cnt]['problem_diff']=='medium_tag' ){ %>
+                        Medium
+                        <% } %>
+          </a>
+          <p class="pb_desc">
+            <%= body[cnt]['problem_desc'] %>
+          </p><br />
+          <% } %>
+            <% } else { %>
+              <p>No problem matched your query...</p>
+              <% } %>
+
+    </div>
+
+
+
+</body>
+
+</html>

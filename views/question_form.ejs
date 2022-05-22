@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>DSA | Search</title>
+
+<body class="bg">
+
+  <%- include('./partials/search.ejs') %>
+
+    <div class="search_page_one">
+      <h2 class="intro"> Say hello to Programming... </h2>
+      <form action="/home" method="POST">
+        <input class="main_search_box" type="text" name="name" placeholder="Search dsa problem" required>
+        <input class="main_submit" type="submit" onclick="reset" value="Search">
+      </form>
+    </div>
+
+
+    </form>
+    <!-- <script>
+    function getdata() {
+      var query = document.getElementById('name_1').value;
+      console.log(query);
+      var xx = [];
+      var string = query;
+      string = string.replace(/(\r\n|\n|\r)/gm, "");
+      // console.log(string);
+      string = string.split(' ');
+      // console.log(string);
+      var carr = removeStopwords(string);
+      carr.sort();
+
+      var mp_query = new Map();
+
+      carr.forEach(element => {
+        if (mp_query.has(element)) {
+          // console.log("say hello");
+          mp_query.set(element, mp_query.get(element) + 1);
+        } else {
+          mp_query.set(element, 1);
+        }
+        // console.log(element);
+      });
+
+      var sz_query_keywords = carr.length;
+      // console.log(carr);
+
+      var all_keyws = fs.readFileSync('all_keywords_titles.txt').toString().split(',');
+      // console.log(all_keyws);
+
+      var tf_query = [];
+      var cnt = 0;
+      all_keyws.forEach(element => {
+        cnt += 1;
+        if (mp_query.has(element)) {
+          tf_query.push(mp_query.get(element) / sz_query_keywords);
+        } else {
+          tf_query.push(0);
+        }
+      });
+
+      var itf_values = fs.readFileSync('itf_value_titles.txt').toString().split(',');
+      // console.log("size" + tf_query.length);
+      var tf_itf_query = [];
+      for (var i = 0; i < itf_values.length; i++) {
+        tf_itf_query.push(tf_query[i] * itf_values[i]);
+      }
+
+      var tf_idf_matrix = fs.readFileSync('tf_value_doc_titles.txt').toString().split(',');
+      var tf_value_doc = [];
+      // console.log(tf_idf_matrix.length);
+      // console.log(tf_idf_matrix.length / 3);
+
+      for (var i = 0; i < 1228; i++) {
+        var values = [];
+        for (var j = 0; j < tf_idf_matrix.length / 1228; j++) {
+          values.push(tf_idf_matrix[(tf_idf_matrix.length / 1228) * i + j]);
+        }
+        // console.log(values);
+        tf_value_doc.push(values);
+      }
+
+      var mag_docs = [];
+      for (var i = 0; i < tf_value_doc.length; i++) {
+        var value = 0;
+        for (var j = 0; j < tf_value_doc[0].length; j++) {
+          value += tf_value_doc[i][j] * tf_value_doc[i][j];
+        }
+        mag_docs.push(Math.sqrt(value));
+      }
+
+
+      var mag_query = 0;
+      for (var i = 0; i < tf_itf_query.length; i++) {
+        // console.log(tf_itf_query[i]);
+        mag_query += tf_itf_query[i] * tf_itf_query[i];
+      }
+      mag_query = Math.sqrt(mag_query);
+
+      var mp_cosine_values = new Map();
+      for (var i = 0; i < tf_value_doc.length; i++) {
+        var val = 1;
+        for (var j = 0; j < tf_value_doc[0].length; j++) {
+          val += tf_value_doc[i][j] * tf_itf_query[j];
+        }
+        val = val / mag_docs[i];
+        val = val / mag_query;
+        // console.log(val);
+        mp_cosine_values.set(val, i + 1);
+      }
+
+      var mapAsc = new Map([...mp_cosine_values.entries()].sort().reverse());
+
+      var cnt = 0;
+      var arr_q = [];
+
+      mapAsc.forEach((key, value) => {
+        var str3 = fs.readFileSync('All_Problems_set/Problems_links/problem_url_' + key.toString() + '.txt').toString();
+        arr_q.push(str3);
+
+      })
+
+      var final_10 = [];
+      for (var i = 0; i < 10; i++) {
+        final_10.push(arr_q[i]);
+      }
+
+      var data = {
+        simple: query,
+        hard: final_10
+      };
+      // console.log(data);
+      // res.render('problems_links_file', { body: data });
+    }
+
+  </script> -->
+
+</body>
+
+</html>

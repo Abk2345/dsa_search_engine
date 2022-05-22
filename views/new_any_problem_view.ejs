@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css" >
+  <title>Problem | <%- body[0]['problem_title'] %></title>
+
+<body>
+  <div id="error"></div>
+  <div>
+  <%- include('./partials/search.ejs') %>
+  <% if (body.length> 0) { %>
+    <% for(var cnt=0; cnt < body.length; cnt++) { %>
+      <h2 id = "title" class="problem_title">
+        <%= body[cnt]['problem_title'] %> | 
+        <% if(body[cnt]['problem_diff']=='hard_tag' ){ %>
+          Hard
+          <% } %>
+            <% if(body[cnt]['problem_diff']=='easy_tag' ){ %>
+              Easy
+              <% } %>
+                <% if(body[cnt]['problem_diff']=='medium_tag' ){ %>
+                  Medium
+                  <% } %>
+        | <a class="link_to" href=<%- body[cnt]['problem_url']%>>See Original Problem</a>
+      </h2>
+      <p class="pb_desc">
+        <%= body[cnt]['problem_desc'] %>
+      </p>
+      <% } %>
+        <% } else { %>
+          <p>No problems matched your query...</p>
+          <% } %>
+</div>
+<div class="code_submisiion">
+  <h2 class="submit_code_desc" style="text-align: center;"> Submit your code in the box.. </h2>
+  <!-- action='/code_submission/problem/<%- body[0]['problem_id'] %>' method="POST" -->
+      <form name="code_form" >
+        <textarea class="code_box" type="text" style="vertical-align: top; text-align: left;" name="code" placeholder="work in progress.." style="background-color: lightblue; " required > 
+          #include<bits/stdc++.h>
+          using namespace std;
+          
+          int main()
+          {
+            cout<<"Hello World"<<endl;
+            return 0;
+          }
+          
+           </textarea>
+        <input class="submit_code" type="submit" onclick="onSubmit()" value="Submit">
+      </form>
+</div>
+
+<script>
+  function onSubmit()
+  {
+    alert('work is going on code submissions...');
+  }
+</script>
+
+
+</body>
+
+</html>

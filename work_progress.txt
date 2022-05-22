@@ -1,0 +1,31 @@
+//done:
+//getting required data from data base
+//pagination
+//filter by difficulty
+//filter by topic
+//search by name
+
+
+//todo:
+//make dynamic thing with ejs - like passing dynamic url
+//make a new ejs file showing problems
+//it will show
+//prob_desc
+//prob_title
+//prob_diff
+
+//submit button to input code
+//store code somewhere
+
+
+#todo:
+Array - done
+bit_manip_dsa - done
+bsearch_dsa - done
+dp_dsa
+graphs_dsa
+greedy_dsa
+Maths_dsa
+strings_dsa
+tree_dsa
+two_pointers_dsa - done
