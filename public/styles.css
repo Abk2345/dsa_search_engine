@@ -8,7 +8,6 @@ body {
   font-family: 'Noto Serif', serif;
 }
 
-
 a {
   margin: 0;
   padding: 0;
@@ -22,32 +21,27 @@ p {
   padding: 5px;
   margin: auto;
 }
- 
 
+.header a{
+  color: white;
+  font-size: 25px;
+  font-style: bold;
+}
+ 
+/*  pagination view  */
 .see {
   max-width: 900px;
   display: flex;
   margin: auto;
   position: relative;
   padding: 5px;
+  margin-top: 10px;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
   border-color: #10555A;
   background-color: rgb(191, 223, 251);
 
-}
-
-.pb_url {
-  color: blue;
-  display: block;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 25px;
-  background-color: rgb(191, 223, 251);
-  margin-bottom: 5px;
-  margin-top: 5px;
-  border-radius: 5px;
-  padding: 8px;
 }
 
 .unsel_link {
@@ -93,10 +87,30 @@ p {
 }
 
 
+/* problem url/title  */
+.pb_url {
+  color: blue;
+  display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  background-color: rgb(191, 223, 251);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+
+
+
+
+/* drop down button */
+
 .dropbtn {
-  background-color: #3498DB;
+  background-color: rgb(27, 27, 209);
+  border-radius: 5px;
   color: white;
-  margin: 10px auto;
+  margin: 5px auto;
   padding: 6px;
   font-size: 16px;
   border: none;
@@ -109,24 +123,19 @@ p {
   background-color: #2980B9;
 }
 
-.header__logo {
-  margin: 10px auto;
-  align-items: center;
-  justify-content: center;
+.dropdown {
+  display: flex;
+  position: inherit;
+  margin: auto;
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: right;
-  display: flex;
-  margin: auto;
-}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f2f2f2;
+  background-color: aliceblue;
   min-width: 160px;
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -142,13 +151,23 @@ p {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd
+  background-color: rgb(191, 223, 251);
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
 }
+
+
+.header__logo {
+  margin: 5px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 
 
 .header {
@@ -169,20 +188,24 @@ p {
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+}
+
+.header__search{
+  margin: 10px auto;
+  border-radius: 5px;
+  border: none;
 }
 
   .header__search input[type=text] {
     padding: 6px;
-    width: 400px;
-    margin: 10px auto;
+    width: 300px;
+    text-align: center;
     border: none;
   }
 
   .header__search input[type=submit] {
-    float: right;
     padding: 6px 10px;
-    margin: 10px auto;
     border: none;
     cursor: pointer;
   }
@@ -210,20 +233,22 @@ p {
   border-width: 5dp;
   border-color: blue;
   display: block;
-  top: 40%;
-  left: 30%;
+  margin: auto;
   font-size: 26px;
-  position: absolute;
   align-items: center;
   text-align: center;
 
 }
 
-.intro {  
+.intro {      
   display: block;
-  top: 30%;
-  left: 38%;
-  position: absolute;
+ 
+  margin-top: 200px;
+  /* margin: auto; */
+  text-align: center;
+  /* top: 30%;
+  left: 38%; */
+  /* position: absolute; */
   color: #10555A;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 30px;
@@ -260,9 +285,9 @@ p {
   color: #10555A;
   margin-top: 5px;
   background-color: white;
-  top: 48%;
-  left: 48%;
-  position: relative;
+  margin: auto;
+
+  margin-top: 20px;
 
 }
 
@@ -274,9 +299,7 @@ p {
   font-size: 25px;
   color: #10555A;
   background-color: white;
-  top: 48%;
-  left: 48%;
-  position: absolute;
+  margin: auto;
 
 }
 
@@ -284,22 +307,92 @@ p {
 @media  screen and (max-width: 1000px) {
   .header {
     display: block;
+    padding: 1px;
   }
   .header__logo{
     text-align: center;
   }
+  .header__search{
+    display: flex;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+  }
   .header__search input[type=text] {
     padding: 6px;
-    width: 200px;
-    margin: 10px auto;
+    width: 150px;
+    text-align: left;
     border: none;
-  } 
-  .header__search input[type=submit] {
-    padding: 6px 10px;
-    margin: 10px auto;
-    border: none;
-    cursor: pointer;
   }
+
+  .intro{
+    margin-top: 50px;
+    font-size: 22px;
+  }
+  .main_search_box {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    border-width: 5dp;
+    border-color: blue;
+    display: block;
+      margin: auto;
+    font-size: 20px;
+    justify-content: center;
+    justify-items: center;
+
+  }
+  .main_submit {
+    border-radius: 5px;
+    border-width: 5dp;
+    border-color: blue;
+    display: block;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #10555A;
+    background-color: white;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.see{
+  max-width: 400px;
+}
+
+.unsel_link{
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.before_link{
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.selectedLink{
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+
+}
+.code_box{
+  width: 400px;
+  height: 200px;
+}
   
 }
+
+/* Add few more breakpoints */
+/* url parsing in correct format */
+/* mvc format doing */
+/* upload and done! */
+
+/* get karna padega waha pe search kara toh */
 
