@@ -10,7 +10,7 @@
 
 <body class="bg">
 
-  <%- include('./partials/search.ejs') %>
+  <%- include('./partials/header_search.ejs') %>
 
     <div class="search_page_one">
       <h2 class="intro"> Say hello to Programming... </h2>
@@ -139,7 +139,11 @@
     }
 
   </script> -->
-
+    <script>
+      if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+      }
+    </script>
 </body>
 
 </html>

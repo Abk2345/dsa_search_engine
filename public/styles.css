@@ -24,7 +24,7 @@ p {
 
 .header a{
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-style: bold;
 }
  
@@ -47,7 +47,11 @@ p {
 .unsel_link {
   display: block;
   border: 1ex;
-  color: black;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  width: 15px;
+  height: 20px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -60,7 +64,11 @@ p {
 .before_link {
   display: block;
   border: 1ex;
-  color: black;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  width: 45px;
+  height: 20px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -240,6 +248,14 @@ p {
 
 }
 
+.error_showing {
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  left: 15%;
+  margin-top: 100px;
+}
+
 .intro {      
   display: block;
  
@@ -263,7 +279,7 @@ p {
 }
 
 .code_box {
-  width: 1200px;
+  width: 1000px;
   height: 300px;
   padding: 20px;
   margin: auto;
@@ -300,16 +316,35 @@ p {
   color: #10555A;
   background-color: white;
   margin: auto;
+  margin-top: 20px;
 
 }
 
+@media  screen and (max-width: 1200px) {
+  .error_showing{
+    width: 1000px;
+    left:8%;
+  }
+  
+}
+
 /* //media Queries */
-@media  screen and (max-width: 1000px) {
+@media  screen and (max-width: 1100px) {
   .header {
     display: block;
-    padding: 1px;
+    padding: 5px;
   }
+
+  .error_showing{
+    width: 700px;
+    left:15%;
+  }
+
   .header__logo{
+    text-align: center;
+  }
+
+  .header__logo a{
     text-align: center;
   }
   .header__search{
@@ -358,7 +393,93 @@ p {
 }
 
 .see{
-  max-width: 400px;
+  max-width: 700px;
+}
+
+.unsel_link{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.before_link{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.selectedLink{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.code_box{
+  width: 700px;
+  height: 200px;
+}
+  
+}
+
+@media  screen and (max-width: 800px) {
+  /* // change few things  */
+  .code_box{
+    width: 400px;
+    height: 200px;
+  }
+
+  .error_showing{
+    width: 500px;
+    left:15%;
+  }
+
+.see{
+  max-width: 500px;
+}
+
+.unsel_link{
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.before_link{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.selectedLink{
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+
+}
+  
+}
+
+
+@media  screen and (max-width: 500px) {
+  /* // change few things  */
+  .code_box{
+    width: 300px;
+    height: 200px;
+  }
+
+  .error_showing{
+    width: 350px;
+    left:15%;
+  }
+
+
+.see{
+  max-width: 350px;
 }
 
 .unsel_link{
@@ -369,26 +490,21 @@ p {
 }
 
 .before_link{
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: 2px;
   margin-right: 2px;
 }
 
 .selectedLink{
-  padding-left: 3px;
-  padding-right: 3px;
-  margin-left: 3px;
-  margin-right: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
 
-}
-.code_box{
-  width: 400px;
-  height: 200px;
 }
   
 }
-
 /* Add few more breakpoints */
 /* url parsing in correct format */
 /* mvc format doing */

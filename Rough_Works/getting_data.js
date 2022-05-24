@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const fs = require('fs');
-const all_problem = require('./model/problem_model');
+const all_problem = require('../model/problem_model');
 
 // console.log(mag_docs);
 const URI = "mongodb+srv://abhishant:abhishant@cluster0.qmkv4.mongodb.net/problems?retryWrites=true&w=majority"

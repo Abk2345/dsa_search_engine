@@ -1,0 +1,80 @@
+<header class="header">
+  <a href=/home>
+    <h2 class="header__logo">DSA SEARCH ENGINE</h2>
+  </a>
+  <div class="header__search">
+    <form action="/home" method="POST">
+      <input type="text" name="name" placeholder="Search by problem" required>
+      <input type="submit" value="Search">
+    </form>
+  </div>
+  <div class="dropdown" align="left">
+    <button onclick="myFunction()" class="dropbtn">Select Difficulty Level</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">All Problems</a>
+      <a href=/problem/difficulty/easy>Easy Problems</a>
+      <a href=/problem/difficulty/medium>Medium Problems</a>
+      <a href=/problem/difficulty/hard>Hard Prolems</a>
+    </div>
+  </div>
+
+  <div class="dropdown" align="left">
+    <button onclick="myFunction2()" class="dropbtn">Select Topic</button>
+    <div id="myDropdown2" class="dropdown-content">
+      <a href="#">Mixed Problems</a>
+      <a href=/problem/topic/arrays>Arrays</a>
+      <a href=/problem/topic/strings>Strings</a>
+      <a href=/problem/topic/bit-manip>Bit Manipulation</a>
+      <a href=/problem/topic/maths>Maths</a>
+      <a href=/problem/topic/binary-search>Binary Search</a>
+      <a href=/problem/topic/greedy>Greedy Algorithm</a>
+      <a href=/problem/topic/trees>Trees</a>
+      <a href=/problem/topic/graphs>Graphs</a>
+      <a href=/problem/topic/dynamic-programming>Dynamic Programming</a>
+      <a href=/problem/topic/two-pointers>Two Pointers</a>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    function myFunction2() {
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
+    }
+  </script>
+
+</header>

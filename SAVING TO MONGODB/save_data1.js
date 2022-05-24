@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const URI = "mongodb+srv://abhishant:abhishant@cluster0.qmkv4.mongodb.net/problem2?retryWrites=true&w=majority"
-const all_problem = require('./model/problem_model');
-const keyword = require('./model/keyword_model');
-const itf_doc = require('./model/itf_values_model');
-const tf_idf = require('./model/tf_idf_schema');
-const num_key_doc = require('./model/number_keyword_model');
+const all_problem = require('../model/problem_model');
+const keyword = require('../model/keyword_model');
+const itf_doc = require('../model/itf_values_model');
+const tf_idf = require('../model/tf_idf_schema');
+const num_key_doc = require('../model/number_keyword_model');
 // const app = express();
 const fs = require('fs');
 var CircularJSON = require('circular-json');

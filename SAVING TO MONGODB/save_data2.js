@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const URI = "mongodb+srv://abhishant:abhishant@cluster0.qmkv4.mongodb.net/problem2?retryWrites=true&w=majority"
-const all_problem = require('./model/problem_model');
+const all_problem = require('../model/problem_model');
 const express = require('express');
-const keyword = require('./model/keyword_model');
-const mag_v = require('./model/mag_docs_mdel');
-const itf_doc = require('./model/itf_values_model');
+const keyword = require('../model/keyword_model');
+const mag_v = require('../model/mag_docs_mdel');
+const itf_doc = require('../model/itf_values_model');
 const app = express();
 const fs = require('fs');
 
