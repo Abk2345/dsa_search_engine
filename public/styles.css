@@ -15,6 +15,12 @@ a {
   color: #222;
 }
 
+.pb_desc_particular{
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  line-height: 1rem;
+}
+
 p {
   border-radius: 5px;
   background: rgb(234, 213, 213);
@@ -77,6 +83,8 @@ p {
   margin-right: 10px;
 
 }
+
+
 
 .selectedLink {
   color: blueviolet;
@@ -304,6 +312,7 @@ p {
   margin: auto;
 
   margin-top: 20px;
+  margin-bottom: 40px;
 
 }
 
@@ -522,6 +531,7 @@ footer{
   color: #fff;
   position: relative;
   border-radius: 5px;
+  margin-top: 20px;
   left: 0;
   right: 0;
   bottom: 0;

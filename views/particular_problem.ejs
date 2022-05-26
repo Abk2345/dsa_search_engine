@@ -30,8 +30,8 @@
                         <% } %>
                           | <a class="link_to" href=<%- body[cnt]['problem_url']%>>See Original Problem</a>
           </h2>
-          <p class="pb_desc">
-            <%= body[cnt]['problem_desc'] %>
+          <p class="pb_desc_particular">
+            <%- desc %>
           </p>
           <% } %>
             <% } else { %>
@@ -64,6 +64,8 @@
     function onSubmit() {
       alert('WORK IN PROGRESS');
     }
+
+    
   </script>
 
 

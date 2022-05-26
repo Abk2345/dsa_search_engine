@@ -3,6 +3,8 @@ var StopwordsFilter = require('node-stopwords-filter');
 var f = new StopwordsFilter();
 var bodyParser = require('body-parser');
 
+
+
 const mongoose = require('mongoose');
 const URI = "mongodb+srv://abhishant:abhishant@cluster0.qmkv4.mongodb.net/problem?retryWrites=true&w=majority"
 const all_problem = require('./model/problem_model');
@@ -13,6 +15,11 @@ const diffRoutes = require('./routes/routeProblemDifficulty');
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("connected to db"))
     .catch((err) => console.log("problen in connecting: " + err));
+
+function nl2br(str, is_xhtml) {
+    var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+    return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+}
 
 const app = express();
 var PORT = process.env.PORT || 3000;
@@ -30,9 +37,15 @@ app.get('/', (req, res) => {
 //particular problem route
 app.get('/problems/:id', (req, res) => {
     var id1 = req.params.id;
+
+    //id - 1231
+
     all_problem.find({ problem_id: id1 }, (err, doc) => {
         if (!err) {
-            res.render('particular_problem', { body: doc });
+            var desc = doc[0]['problem_desc'];
+            var my_desc = nl2br(desc);
+
+            res.render('particular_problem', { body: doc, desc: my_desc });
         } else {
             console.log(err);
         }
@@ -91,5 +104,18 @@ app.use(bodyParser.json())
 app.set('view engine', 'ejs');
 
 app.use(queryRoutes);
+
+// const fs = require('fs');
+
+// var desc = fs.readFileSync('All_Problems_set/Problems_description/problem_1.txt').toString();
+
+// //testing string proper orientation
+// app.get('/test', (req, res) => {
+//     var mystr = nl2br(desc);
+//     res.send(mystr);
+//     // alert(mystr);   
+
+
+// })
 
 
