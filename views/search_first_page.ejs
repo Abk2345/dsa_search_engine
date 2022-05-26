@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>DSA | Search</title>
 
-<body class="bg">
+<body>
 
   <%- include('./partials/header_search.ejs') %>
     <!-- shows first page of the search engine  -->
@@ -18,10 +19,12 @@
         <input class="main_search_box" type="text" name="name" placeholder="Search dsa problem" required>
         <input class="main_submit" type="submit" onclick="reset" value="Search">
       </form>
+
+      
     </div>
+    <!-- <%- include('./partials/footer.ejs') %> -->
 
-
-    </form>
+    
     <!-- <script>
     function getdata() {
       var query = document.getElementById('name_1').value;

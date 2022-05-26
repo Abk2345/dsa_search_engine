@@ -2,7 +2,7 @@
 
 body {
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0 20px; 
   max-width: 1300px;
   background: aliceblue;
   font-family: 'Noto Serif', serif;
@@ -511,4 +511,83 @@ p {
 /* upload and done! */
 
 /* get karna padega waha pe search kara toh */
+
+/* footer styles */
+
+footer{
+  background: #000;
+  max-width: 1300px;
+  font-family: "open Sans";
+  padding-top: 20px;
+  color: #fff;
+  position: relative;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+
+}
+
+.footer-content p{
+  background: #000;
+  max-width: 500px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem 0;
+
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  max-width: 1300px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  background: #000;
+  text-transform: capitalize;
+}
+
 
