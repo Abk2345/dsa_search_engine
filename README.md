@@ -4,7 +4,7 @@
 This project develops a search engine on problem set containing 2265 problems hosted on mongodb atlas database, with additional features of select problems by topics, select problem by difficulty and code submission(work in progress)
 
 # App Live Link
-https://abhi-dsa-search-engine-project.herokuapp.com/
+https://abhi-dsa-searchengine-project.herokuapp.com/
 
 # Steps to run this project on a local server
 
