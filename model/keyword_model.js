@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//all keywords model
 const problemSchema = new mongoose.Schema({
     keyword_values: String, 
 

@@ -2,6 +2,7 @@
 const all_problem = require('../model/problem_model');
 const resultsPerPage = 15;
 
+//controllers for
 //problem_easy, problem_medium, problem_hard
 
 const problem_easy = (req, res)=>{

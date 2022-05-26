@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//problem model
 const problemSchema = new mongoose.Schema({
     problem_desc: String,
     problem_url: String,

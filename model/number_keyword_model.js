@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//when was trying out with prob_desc, model for number of keywords in all documents
 const problemSchema = new mongoose.Schema({
     number_keyword_values: String, 
 

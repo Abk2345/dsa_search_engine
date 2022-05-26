@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problems | <%- tag %> </title>
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problems | <%- tag %>
+  </title>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-    <div class="break"></div>
+  <div class="break"></div>
 
-    <%- include('./partials/header_search.ejs') %>
+  <%- include('./partials/header_search.ejs') %>
 
-    
-    <!--Display the links to the pages-->
+
+    <!-- shows problems sorted by difficulty with pagination -->
     <div class="see">
 
-    <% if(iterator > 1) { %> <a class="before_link" href=/problem/difficulty/<%- tag %>?page=<%=iterator-1%>>Before</a> <% } %>
-    <% for(let i = iterator; i <= endingLink; i++) { %>
-        <% if(i === page+1) { %>
-        <a class="selectedLink" href=/problem/difficulty/<%- tag %>?page=<%=i%>><%=i%></a>
-        <% continue; %>
-    <% } %>
-        <a class="unsel_link" href=/problem/difficulty/<%- tag %>?page=<%=i%>><%=i%></a>
+      <% if(iterator> 1) { %> <a class="before_link" href=/problem/difficulty/<%- tag %>?page=<%=iterator-1%>>Before</a>
         <% } %>
-        <% if(endingLink < numberOfPages) { %> <a class="before_link" href=/problem/difficulty/<%- tag %>?page=<%=endingLink+1%>>After</a> <% } %>
+          <% for(let i=iterator; i <=endingLink; i++) { %>
+            <% if(i===page+1) { %>
+              <a class="selectedLink" href=/problem/difficulty/<%- tag %>?page=<%=i%>><%=i%></a>
+              <% continue; %>
+                <% } %>
+                  <a class="unsel_link" href=/problem/difficulty/<%- tag %>?page=<%=i%>><%=i%></a>
+                  <% } %>
+                    <% if(endingLink < numberOfPages) { %> <a class="before_link" href=/problem/difficulty/<%- tag
+                        %>?page=<%=endingLink+1%>>After</a>
+                      <% } %>
     </div>
     <div class="break"></div>
     <div class="problem_on_search">
@@ -57,6 +63,7 @@
     </div>
 
 
-    
+
 </body>
+
 </html>

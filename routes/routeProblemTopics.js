@@ -4,7 +4,7 @@ const router = express.Router();
 const topicController = require('../Controllers/topicControllers');
 
 
-//routers by topic
+//routes different topic wise problems
 router.get('/problem/topic/arrays', topicController.problem_array);
 
 router.get('/problem/topic/binary-search', topicController.problem_binary);

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//idf_values for all keywords model
 const problemSchema = new mongoose.Schema({
     itf_values: String, 
 

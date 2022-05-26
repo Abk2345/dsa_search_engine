@@ -11,7 +11,8 @@
 <body>
 
   <%- include('./partials/header_search.ejs') %>
-
+    <!-- on search of any problem from the main page, it refers to this page -->
+    <!-- homepage for this search engine, shows 15 randomly choosen problem from the databse of 2265 problems -->
     <div class="problem_on_search">
       <% if (body.length> 1) { %>
         <% for(var cnt=0; cnt < body.length; cnt++) { %>

@@ -1,22 +1,11 @@
 const express = require('express');
-let ejs = require('ejs');
-const fs = require('fs');
 var StopwordsFilter = require('node-stopwords-filter');
-const { exit } = require('process');
-const { bre } = require('stopword');
 var f = new StopwordsFilter();
-const { removeStopwords } = require('stopword');
 var bodyParser = require('body-parser');
 
 const mongoose = require('mongoose');
 const URI = "mongodb+srv://abhishant:abhishant@cluster0.qmkv4.mongodb.net/problem?retryWrites=true&w=majority"
 const all_problem = require('./model/problem_model');
-const keyword = require('./model/keyword_model');
-const itf_doc = require('./model/itf_values_model');
-const tf_idf = require('./model/tf_idf_schema');
-var CircularJSON = require('circular-json');
-const mag_v = require('./model/mag_docs_mdel');
-const code_submission = require('./model/code_submit_model');
 
 const queryRoutes = require('./routes/routeQuery');
 const topicRoutes = require('./routes/routeProblemTopics');
@@ -27,13 +16,13 @@ mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((err) => console.log("problen in connecting: " + err));
 
 const app = express();
-var PORT = process.env.PORT | 3000;
+var PORT = process.env.PORT || 3000;
 app.listen(PORT);
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static('public'));
 
 
-
+//landing page rouute
 app.get('/', (req, res) => {
     res.render('search_first_page');
 })
@@ -71,6 +60,7 @@ app.get('/problems/:id', (req, res) => {
 //     //
 // })
 
+//main page route
 app.get('/home', (req, res) => {
     //get random questions
     all_problem.count().exec(function (err, count) {

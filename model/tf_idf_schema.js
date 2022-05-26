@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//tf_idf_values of the matrix model
 const problemSchema = new mongoose.Schema({
     tf_idf_values: String, 
 

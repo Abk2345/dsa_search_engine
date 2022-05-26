@@ -19,8 +19,7 @@ mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true})
     
 // })
 
-
-
+//building a document data model
 // const all_prob = new all_problem({
 //   problem_desc: "My name is problem",
 //   problem_diff: "Easy",
@@ -29,45 +28,46 @@ mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true})
 //   problem_url: "https://google.com",
 // });
 
-var all_keyws = fs.readFileSync('number_keyword_doc.txt').toString();
+var all_keyws = fs.readFileSync('all_keywords_titles.txt').toString();
 console.log(all_keyws);
 
-const key = new num_key_doc({
+const key = new keyword({
   number_keyword_values: all_keyws
 })
 
 key.save().then(result => {
-  console.log('Doc saved!')
+  console.log('keywords saved!')
 }).catch((err) => {
   console.log(err);
 })
 
-// var tf_idf_v = fs.readFileSync('tf_value_doc_desc.txt').toString();
-// console.log(tf_idf_v);
+var tf_idf_v = fs.readFileSync('tf_value_doc_desc.txt').toString();
+console.log(tf_idf_v);
 
-// const key = new tf_idf({
-//     tf_idf_values: tf_idf_v 
-//   })
+const key2 = new tf_idf({
+    tf_idf_values: tf_idf_v 
+  })
   
-//   key.save().then(result => {
-//     console.log('TF-IDF values saved!')
-//   }).catch((err) => {
-//     console.log(err);
-//   })
+  key2.save().then(result => {
+    console.log('TF-IDF values saved!')
+  }).catch((err) => {
+    console.log(err);
+  })
 
-// var itf_v = fs.readFileSync('itf_value_titles.txt').toString();
-// console.log(itf_v);
+var itf_v = fs.readFileSync('itf_value_titles.txt').toString();
+console.log(itf_v);
 
-// const key = new itf_doc({
-//     itf_values: itf_v 
-//   })
+const key3 = new itf_doc({
+    itf_values: itf_v 
+  })
   
-// key.save().then(result => {
-//     console.log('IDF values saved!')
-//   }).catch((err) => {
-//     console.log(err);
-//   })
+key3.save().then(result => {
+    console.log('IDF values saved!')
+  }).catch((err) => {
+    console.log(err);
+  })
 
+//how to save data to db
 // all_prob.save().then(result => {
 //   console.log('note saved!')
 //   mongoose.connection.close()
