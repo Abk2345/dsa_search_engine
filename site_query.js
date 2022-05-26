@@ -6,7 +6,6 @@ var bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const URI = "mongodb+srv://abhishant:abhishant@cluster0.qmkv4.mongodb.net/problem?retryWrites=true&w=majority"
 const all_problem = require('./model/problem_model');
-
 const queryRoutes = require('./routes/routeQuery');
 const topicRoutes = require('./routes/routeProblemTopics');
 const diffRoutes = require('./routes/routeProblemDifficulty');

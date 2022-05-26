@@ -1,0 +1,27 @@
+Add Binary
+Single Number
+Reverse Bits
+Number of 1 Bits
+Power of Two
+Missing Number
+Counting Bits
+Power of Four
+Find the Difference
+Binary Watch
+Convert a Number to Hexadecimal
+Hamming Distance
+Number Complement
+Set Mismatch
+Binary Number with Alternating Bits
+Prime Number of Set Bits in Binary Representation
+Binary Gap
+Complement of Base 10 Integer
+Number of Steps to Reduce a Number to Zero
+Sort Integers by The Number of 1 Bits
+XOR Operation in an Array
+Count the Number of Consistent Strings
+Decode XORed Array
+Longest Nice Substring
+Sum of All Subset XOR Totals
+Divide Array Into Equal Pairs
+Minimum Bit Flips to Convert Number

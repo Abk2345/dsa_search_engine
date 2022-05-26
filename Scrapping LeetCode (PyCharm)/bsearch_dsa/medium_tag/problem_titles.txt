@@ -1,0 +1,76 @@
+Search in Rotated Sorted Array
+Find First and Last Position of Element in Sorted Array
+Search a 2D Matrix
+Search in Rotated Sorted Array II
+Find Minimum in Rotated Sorted Array
+Find Peak Element
+Two Sum II - Input Array Is Sorted
+Minimum Size Subarray Sum
+Count Complete Tree Nodes
+Search a 2D Matrix II
+H-Index II
+Find the Duplicate Number
+Longest Increasing Subsequence
+Kth Smallest Element in a Sorted Matrix
+Nth Digit
+Find Right Interval
+132 Pattern
+Heaters
+K-diff Pairs in an Array
+Single Element in a Sorted Array
+Valid Triangle Number
+Sum of Square Numbers
+Find K Closest Elements
+Maximum Length of Repeated Subarray
+Reach a Number
+Friends Of Appropriate Ages
+Most Profit Assigning Work
+Koko Eating Bananas
+Random Pick with Weight
+Random Point in Non-overlapping Rectangles
+Online Election
+Time Based Key-Value Store
+Max Consecutive Ones III
+Capacity To Ship Packages Within D Days
+Longest Arithmetic Subsequence
+Sum of Mutated Array Closest to Target
+Snapshot Array
+Compare Strings by Frequency of the Smallest Character
+Range Frequency Queries
+Minimum Garden Perimeter to Collect Enough Apples
+Ugly Number III
+Get Equal Substrings Within Budget
+Maximum Candies Allocated to K Children
+Find Positive Integer Solution for a Given Equation
+Find the Smallest Divisor Given a Threshold
+Maximum Side Length of a Square with Sum Less than or Equal to Threshold
+Tweet Counts Per Frequency
+Find Two Non-overlapping Sub-arrays Each With Target Sum
+Minimum Number of Days to Make m Bouquets
+Avoid Flood in The City
+Range Sum of Sorted Subarray Sums
+Number of Subsequences That Satisfy the Given Sum Condition
+Magnetic Force Between Two Balls
+Shortest Subarray to be Removed to Make Array Sorted
+Find Latest Group of Size M
+Path With Minimum Effort
+Sell Diminishing-Valued Colored Balls
+Minimum Operations to Reduce X to Zero
+Ways to Split Array Into Three Subarrays
+Minimum Limit of Balls in a Bag
+Maximum Value at a Given Index in a Bounded Array
+Minimum Absolute Sum Difference
+Frequency of the Most Frequent Element
+Maximum Distance Between a Pair of Values
+Minimum Speed to Arrive on Time
+Find the Student that Will Replace the Chalk
+Maximum Number of Removable Characters
+Find a Peak Element II
+Maximum Earnings From Taxi
+Maximize the Confusion of an Exam
+Two Best Non-Overlapping Events
+Plates Between Candles
+Most Beautiful Item for Each Query
+Minimized Maximum of Products Distributed to Any Store
+Minimum Time to Complete Trips
+Count Number of Rectangles Containing Each Point

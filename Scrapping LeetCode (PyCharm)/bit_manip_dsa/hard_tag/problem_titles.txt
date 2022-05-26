@@ -1,0 +1,42 @@
+Stickers to Spell Word
+Transform to Chessboard
+Split Array With Same Average
+Chalkboard XOR Game
+Shortest Path Visiting All Nodes
+Shortest Path to Get All Keys
+Find the Shortest Superstring
+Unique Paths III
+Triples with Bitwise AND Equal To Zero
+Minimum Number of K Consecutive Bit Flips
+Number of Squareful Arrays
+Smallest Sufficient Team
+Number of Valid Words for Each Puzzle
+Maximum Score Words Formed by Letters
+Minimum Number of Flips to Convert Binary Matrix to Zero Matrix
+Maximum Students Taking Exam
+Number of Ways to Wear Different Hats to Each Other
+Parallel Courses II
+Find a Value of a Mysterious Function Closest to Target
+Find Longest Awesome Substring
+Minimum Cost to Connect Two Groups of Points
+Maximum Number of Achievable Transfer Requests
+Minimum One Bit Operations to Make Integers Zero
+Count Subtrees With Max Distance Between Cities
+Distribute Repeating Integers
+Maximize Grid Happiness
+Minimum Incompatibility
+Find Minimum Time to Finish All Jobs
+Maximum XOR With an Element From Array
+Closest Subsequence Sum
+Maximize Score After N Operations
+Count Pairs With XOR in a Range
+Make the XOR of All Segments Equal to Zero
+Maximum Number of Groups Getting Fresh Donuts
+Find XOR Sum of All Pairs Bitwise AND
+Minimum XOR Sum of Two Arrays
+Maximum Genetic Difference Query
+The Number of Good Subsets
+Partition Array Into Two Arrays to Minimize Sum Difference
+Maximum Good People Based on Statements
+Groups of Strings
+Maximum AND Sum of Array

@@ -1,0 +1,19 @@
+Search Insert Position
+Sqrt(x)
+First Bad Version
+Intersection of Two Arrays
+Intersection of Two Arrays II
+Valid Perfect Square
+Guess Number Higher or Lower
+Arranging Coins
+Find Smallest Letter Greater Than Target
+Binary Search
+Peak Index in a Mountain Array
+Fair Candy Swap
+The K Weakest Rows in a Matrix
+Check If N and Its Double Exist
+Count Negative Numbers in a Sorted Matrix
+Find the Distance Value Between Two Arrays
+Kth Missing Positive Number
+Special Array With X Elements Greater Than or Equal X
+Find Target Indices After Sorting Array

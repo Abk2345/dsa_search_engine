@@ -1,0 +1,44 @@
+Wildcard Matching
+Candy
+Create Maximum Number
+Patching Array
+Split Array Largest Sum
+Strong Password Checker
+IPO
+Super Washing Machines
+Course Schedule III
+Smallest Range Covering Elements from K Lists
+Set Intersection Size At Least Two
+Couples Holding Hands
+Max Chunks To Make Sorted II
+Minimum Cost to Hire K Workers
+Minimum Number of Refueling Stops
+Stamping The Sequence
+Longest Chunked Palindrome Decomposition
+Reverse Subarray To Maximize Array Value
+Rank Transform of a Matrix
+Largest Multiple of Three
+Minimum Number of Moves to Make Palindrome
+Minimum Number of Taps to Open to Water a Garden
+Pizza With 3n Slices
+Maximum Performance of a Team
+Reducing Dishes
+Minimum Possible Integer After at Most K Adjacent Swaps On Digits
+Minimum Number of Increments on Subarrays to Form a Target Array
+Maximum Number of Non-Overlapping Substrings
+Get the Maximum Score
+Check If String Is Transformable With Substring Sort Operations
+Find Servers That Handled Most Number of Requests
+Minimum Number of Removals to Make Mountain Array
+Minimum Initial Energy to Finish Tasks
+Minimize Deviation in Array
+Minimum Adjacent Swaps for K Consecutive Ones
+Minimum Operations to Make a Subsequence
+Building Boxes
+Longest Subsequence Repeated k Times
+Smallest K-Length Subsequence With Occurrences of a Letter
+Maximum Number of Tasks You Can Assign
+Stamping the Grid
+Earliest Possible Day of Full Bloom
+Maximum Running Time of N Computers
+Maximum Total Beauty of the Gardens

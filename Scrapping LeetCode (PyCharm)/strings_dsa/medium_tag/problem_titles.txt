@@ -1,0 +1,214 @@
+Longest Substring Without Repeating Characters
+Longest Palindromic Substring
+Zigzag Conversion
+String to Integer (atoi)
+Integer to Roman
+Letter Combinations of a Phone Number
+Generate Parentheses
+Count and Say
+Multiply Strings
+Group Anagrams
+Simplify Path
+Decode Ways
+Restore IP Addresses
+Interleaving String
+Palindrome Partitioning
+Word Break
+Reverse Words in a String
+Compare Version Numbers
+Fraction to Recurring Decimal
+Largest Number
+Repeated DNA Sequences
+Implement Trie (Prefix Tree)
+Design Add and Search Words Data Structure
+Basic Calculator II
+Different Ways to Add Parentheses
+Bulls and Cows
+Additive Number
+Remove Duplicate Letters
+Maximum Product of Word Lengths
+Verify Preorder Serialization of a Binary Tree
+Mini Parser
+Longest Absolute File Path
+Decode String
+Longest Substring with At Least K Repeating Characters
+Remove K Digits
+Reconstruct Original Digits from English
+Longest Repeating Character Replacement
+Minimum Genetic Mutation
+Find All Anagrams in a String
+String Compression
+Serialize and Deserialize BST
+Sort Characters By Frequency
+Unique Substrings in Wraparound String
+Validate IP Address
+Ones and Zeroes
+Magical String
+Longest Palindromic Subsequence
+Longest Uncommon Subsequence II
+Longest Word in Dictionary through Deleting
+Encode and Decode TinyURL
+Complex Number Multiplication
+Minimum Time Difference
+Next Greater Element III
+Permutation in String
+Delete Operation for Two Strings
+Fraction Addition and Subtraction
+Find Duplicate File in System
+Solve the Equation
+Palindromic Substrings
+Replace Words
+Dota2 Senate
+Implement Magic Dictionary
+Map Sum Pairs
+Valid Parenthesis String
+Repeated String Match
+Top K Frequent Words
+Minimum ASCII Delete Sum for Two Strings
+Longest Word in Dictionary
+Accounts Merge
+Remove Comments
+Open the Lock
+Partition Labels
+Reorganize String
+Swap Adjacent in LR String
+Letter Case Permutation
+Custom Sort String
+Number of Matching Subsequences
+Valid Tic-Tac-Toe State
+Expressive Words
+Subdomain Visit Count
+Ambiguous Coordinates
+Short Encoding of Words
+Masking Personal Information
+Find And Replace in String
+Push Dominoes
+Split Array into Fibonacci Sequence
+Shifting Letters
+Score of Parentheses
+Decoded String at Index
+Find and Replace Pattern
+Groups of Special-Equivalent Strings
+Word Subsets
+Minimum Add to Make Parentheses Valid
+Flip String to Monotone Increasing
+Largest Time for Given Digits
+Delete Columns to Make Sorted II
+Vowel Spellchecker
+Time Based Key-Value Store
+String Without AAA or BBB
+Smallest String Starting From Leaf
+Satisfiability of Equality Equations
+Check If Word Is Valid After Substitutions
+Binary String With Substrings Representing 1 To N
+Camelcase Matching
+Robot Bounded In Circle
+Longest String Chain
+Smallest Subsequence of Distinct Characters
+Letter Tile Possibilities
+Maximum Nesting Depth of Two Valid Parentheses Strings
+Iterator for Combination
+Alphabet Board Path
+Longest Common Subsequence
+Break a Palindrome
+Swap For Longest Repeated Character Substring
+Invalid Transactions
+Compare Strings by Frequency of the Smallest Character
+Can Make Palindrome from Substring
+Reverse Substrings Between Each Pair of Parentheses
+Longest Happy String
+Smallest String With Swaps
+Remove All Adjacent Duplicates in String II
+Get Equal Substrings Within Budget
+Remove Sub-Folders from the Filesystem
+Replace the Substring for Balanced String
+Maximum Length of a Concatenated String with Unique Characters
+Minimum Swaps to Make Strings Equal
+Minimum Remove to Make Valid Parentheses
+Search Suggestions System
+Maximum Number of Occurrences of a Substring
+Print Words Vertically
+Number of Substrings Containing All Three Characters
+Minimum Number of Steps to Make Two Strings Anagram
+Find the Longest Substring Containing Vowels in Even Counts
+Rank Teams by Votes
+Construct K Palindrome Strings
+Design Underground System
+The k-th Lexicographical String of All Happy Strings of Length n
+Number of Steps to Reduce a Number in Binary Representation to One
+HTML Entity Parser
+Check If a String Can Break Another String
+Display Table of Food Orders in a Restaurant
+Minimum Number of Frogs Croaking
+Simplified Fractions
+Check If a String Contains All Binary Codes of Size K
+Rearrange Words in a Sentence
+People Whose List of Favorite Companies Is Not a Subset of Another List
+Maximum Number of Vowels in a Substring of Given Length
+Making File Names Unique
+Number of Good Ways to Split a String
+Number of Substrings With Only 1s
+Can Convert String in K Moves
+Minimum Insertions to Balance a Parentheses String
+Minimum Suffix Flips
+Find Kth Bit in Nth Binary String
+Number of Ways to Split a String
+Minimum Time to Make Rope Colorful
+Alert Using Same Key-Card Three or More Times in a One Hour Period
+Split a String Into the Max Number of Unique Substrings
+Split Two Strings to Make Palindrome
+Count Substrings That Differ by One Character
+Lexicographically Smallest String After Applying Operations
+Minimum Deletions to Make String Balanced
+Minimum Deletions to Make Character Frequencies Unique
+Determine if Two Strings Are Close
+Smallest String With A Given Numeric Value
+Maximum Binary String After Change
+Partitioning Into Minimum Number Of Deci-Binary Numbers
+Maximum Score From Removing Substrings
+Minimum Length of String After Deleting Similar Ends
+Change Minimum Characters to Satisfy One of Three Conditions
+Largest Merge Of Two Strings
+Count Number of Homogenous Substrings
+Sum of Beauty of All Substrings
+Minimum Number of Operations to Move All Balls to Each Box
+Sentence Similarity III
+Evaluate the Bracket Pairs of a String
+Longest Substring Of All Vowels in Order
+Splitting a String Into Descending Consecutive Values
+Minimum Adjacent Swaps to Reach the Kth Smallest Number
+Minimum Number of Swaps to Make the Binary String Alternating
+Jump Game VII
+Maximum Value after Insertion
+Minimum Number of Flips to Make the Binary String Alternating
+Remove All Occurrences of a Substring
+Maximum Number of Removable Characters
+The Number of Full Rounds You Have Played
+Number of Wonderful Substrings
+Unique Length-3 Palindromic Subsequences
+Largest Number After Mutating Substring
+Minimum Number of Swaps to Make the String Balanced
+Find Unique Binary String
+Find the Kth Largest Integer in the Array
+Maximum Product of the Length of Two Palindromic Subsequences
+Number of Pairs of Strings With Concatenation Equal to Target
+Maximize the Confusion of an Exam
+Remove Colored Pieces if Both Neighbors are the Same Color
+Plates Between Candles
+Vowels of All Substrings
+Minimum Number of Buckets Required to Collect Rainwater from Houses
+Decode the Slanted Ciphertext
+Step-By-Step Directions From a Binary Tree Node to Another
+Find All Possible Recipes from Given Supplies
+Check if a Parentheses String Can Be Valid
+Adding Spaces to a String
+Longest Palindrome by Concatenating Two Letter Words
+Execution of All Suffix Instructions Staying in a Grid
+Number of Laser Beams in a Bank
+Count Words Obtained After Adding a Letter
+Minimum Number of Steps to Make Two Strings Anagram II
+Construct String With Repeat Limit
+Maximize Number of Subsequences in a String
+Count Collisions on a Road
+Number of Ways to Select Buildings
+Minimize Result by Adding Parentheses to Expression

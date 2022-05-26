@@ -1,0 +1,25 @@
+Longest Palindrome
+Assign Cookies
+Array Partition I
+Can Place Flowers
+Valid Palindrome II
+Lemonade Change
+DI String Match
+Largest Perimeter Triangle
+Maximize Sum Of Array After K Negations
+Partition Array Into Three Parts With Equal Sum
+Minimum Cost to Move Chips to The Same Position
+Split a String in Balanced Strings
+Maximum 69 Number
+Minimum Subsequence in Non-Increasing Order
+Maximum Units on a Truck
+Latest Time by Replacing Hidden Digits
+Minimum Operations to Make the Array Increasing
+Largest Odd Number in String
+Minimum Time to Type Word Using Special Typewriter
+Minimum Moves to Convert String
+Two Furthest Houses With Different Colors
+Minimum Cost of Buying Candies With Discount
+Minimum Sum of Four Digit Number After Splitting Digits
+Remove Digit From Number to Maximize Result
+Minimum Number of Operations to Convert Time
